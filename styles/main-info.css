@@ -1,0 +1,49 @@
+.wrapper-main-info {
+    background: var(--main-color);
+}
+
+.main-info {
+    display: flex;
+}
+
+.main-info button {
+    background: var(--secondary-color);
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    color: var(--white-color);
+    border: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    width: 25%;
+    cursor: pointer;
+}
+
+.main-info button:first-child {
+    width: 50%;
+}
+
+.tab-btn.is-active {
+    background: var(--main-color);
+}
+
+@media (max-width: 750px) {
+    .main-info button {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-info {
+        flex-wrap: wrap;
+    }
+    
+   .main-info button {
+        width: 50%;
+    }
+
+    .main-info button:first-child {
+        width: 100%;
+    }
+}

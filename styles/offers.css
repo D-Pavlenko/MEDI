@@ -1,0 +1,127 @@
+.wrapper-offers {
+    background: linear-gradient(180deg, rgba(0, 134, 138, 0.1) 58%, rgba(255, 255, 255, 1) 1%);
+}
+
+.offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    max-width: 1350px;
+    min-height: 606px;
+}
+
+.offers h2 {
+    color: var(--secondary-color);
+}
+
+.offer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -12px;
+}
+
+.offer-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 306px;
+    width: 100%;
+    margin: 0 12px;
+}
+
+.box-top {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.box-top span {
+    position: absolute;
+    top: 31px;
+    left: 30px;
+    padding: 9px 15px 10px;
+    background: var(--main-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--white-color);
+}
+
+.box-bottom {
+    background: var(--secondary-color);
+    padding: 25px 30px;
+    margin-bottom: 20px;
+}
+
+.box-bottom button {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box-bottom a {
+    text-decoration: none;
+}
+
+.box-bottom span {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 31px;
+    color: var(--white-color);
+    margin-right: 15px;
+    text-align: left;
+}
+
+.box-bottom span:hover {
+    color: var(--main-color);
+}
+
+.box-bottom-btn {
+    max-width: 50px;
+    padding: 16px 15px;
+    border: 1px solid var(--white-color);;
+}
+
+.box-bottom-btn:hover {
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+@media (max-width: 770px) {
+   .offers h2 {
+        text-align: center;
+        font-size: 40px;
+        line-height: 50px;
+   }
+}
+
+@media (max-width: 425px) {
+    .offers h2 {
+        font-size: 32px;
+   }
+}
+
+@media (max-width: 340px) {
+    .offer-box {
+        max-width: 286px;
+    }
+
+    .box-top img {
+        max-width: 286px;
+    }
+
+    .box-bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .box-bottom span {
+        margin-right: 10px;
+    }
+}
+

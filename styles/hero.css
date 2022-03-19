@@ -1,0 +1,136 @@
+.wrapper-hero {
+    background: var(--main-color);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-items {
+    margin: auto 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 510px;
+    width: 100%;
+}
+
+.hero-items-text {
+    max-width: 416px;
+    color: var(--white-color);
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.hero-items button {
+    min-width: 163px;
+    color: var(--white-color);
+    padding: 15px 25px 14px;
+    background: var(--secondary-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+}
+
+.hero-items button:hover {
+    background: var(--white-color);
+    color: var(--secondary-color);
+}
+
+.hero-items-slider-btn button{
+    min-width: 60px;
+    background: transparent;
+    border: 1px solid var(--white-color);
+    padding: 13px 14px 15px 14px;
+    cursor: pointer;
+}
+
+.hero-items-slider-btn img {
+    max-width: 30px;
+    align-items: center;
+}
+
+.hero-items-slider-btn button:hover {
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.slider-btn-next {
+    margin-left: 0;
+}
+
+.hero-items-slider-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.swiper {
+    max-width: 746px;
+    margin: 0;
+}
+
+.hero-image {
+    max-width: 746px;
+    width: 100%;
+}
+
+@media (max-width: 1080px) {
+    .hero {
+        gap: 25px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-height: 533px;
+        position: absolute;
+        margin: auto 0;
+        position: absolute;
+        margin: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 850px) {
+    .hero {
+       display: flex;
+       flex-direction: column;
+       gap: 0;
+    }
+    
+    .swiper {
+        max-width: 650px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+    }
+
+    .hero-items {
+        max-width: 850px;
+    }
+
+    .hero-items-slider-btn {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 395px) {
+    .hero h1 {
+        font-size: 39px;
+    }
+}
